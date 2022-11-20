@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CyHealth Covid19 statistics</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.3.0/billboard.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/billboard.js/3.3.0/billboard.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong"
+    />
+  </head>
+  <body>
+    <nav>
+      <header>CyHealth</header>
+      <div class="nav-icons">
+        <a href="#">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </nav>
+
+    <div class="lead">
+      <h1>Worldwide Covid19 Statistics</h1>
+    </div>
+
+    <div class="statistics-table">
+      <table class="tablemanager">
+        <thead>
+          <tr>
+            <th>Continent</th>
+            <th>Country</th>
+            <th>Population</th>
+            <th>New Cases</th>
+            <th>Active Cases</th>
+            <th>Critical cases</th>
+            <th>Recovered</th>
+            <th>Total Cases</th>
+            <th>New Deaths</th>
+            <th>Total Deaths</th>
+            <th>Tests</th>
+            <th>Day</th>
+            <th>Time</th>
+          </tr>
+        </thead>
+
+        <tbody id="tablebody"></tbody>
+      </table>
+    </div>
+
+    <div class="graph">
+      <h2>Covid cases History</h2>
+      <div class="chart" id="covid-all-cases"></div>
+    </div>
+
+    <footer>
+      <h1>Covid19 Statistics</h1>
+      <div class="footer-icons">
+        <a href="#">
+          <i class="fa fa-facebook-official" aria-hidden="true"></i>
+        </a>
+        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="tableManager.js"></script>
+</html>
